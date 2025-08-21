@@ -42,7 +42,7 @@ function App() {
   const clearCart = () => setCart([]);
 
   return (
-    <>
+  
     <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart }}>
       <Routes>
         <Route path="/" element={<Layout />}>

@@ -3,7 +3,7 @@ import React from "react";
 const LatestProperties = ({ addToCart }) => {
   const properties = [
     { id: 5, title: "Smart Luxury Home", price: 30000000, location: "Bangalore", image: "/public/luxury house img 01.jpg" },
-    { id: 6, title: "Sea Facing Penthouse", price: 60000000, location: "Chennai", image: "/public/sea pent house 01.webp" },
+    { id: 6, title: "Sea Facing Penthouse", price: 60000000, location: "Chennai", image: "/public/ pent hus 03.jpg" },
     { id: 7, title: "Golf Course Villa", price: 50000000, location: "Gurgaon", image: "/public/golf villa img 01.jpg" },
   ];
 
