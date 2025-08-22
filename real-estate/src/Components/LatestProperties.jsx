@@ -9,6 +9,43 @@ const LatestProperties = ({ addToCart }) => {
 
   return (
     <div className="max-w-6xl mx-auto p-6">
+
+       <div className="w-full h-[91vh] relative">
+      <Swiper
+        modules={[Autoplay, Pagination]}
+        loop
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        pagination={{ clickable: true }}
+        className="h-full"
+      >
+        {slides.map((src, index) => (
+          <SwiperSlide key={index} style={slideStyle}>
+            <img
+              src={src}
+              alt={Slide ${index + 1}}
+              className="w-full h-full object-fill"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      <style>{`
+         Pagination dots color 
+        .swiper-pagination-bullet {
+          background-color: rgb(68,202,250);
+          opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+          background-color: #29b6f6;
+        }
+      `}</style>
+    </div>
+  );
+};
+
       <h2 className="text-3xl font-bold mb-6 text-center">🆕 Latest Properties</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {properties.map((p) => (
