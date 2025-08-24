@@ -2,49 +2,13 @@ import React from "react";
 
 const LatestProperties = ({ addToCart }) => {
   const properties = [
-    { id: 5, title: "Smart Luxury Home", price: 30000000, location: "Bangalore", image: "/public/luxury house img 01.jpg" },
-    { id: 6, title: "Sea Facing Penthouse", price: 60000000, location: "Chennai", image: "/public/ pent hus 03.jpg" },
-    { id: 7, title: "Golf Course Villa", price: 50000000, location: "Gurgaon", image: "/public/golf villa img 01.jpg" },
+    { id: 5, title: "Smart Luxury Home", price: 30000000, location: "Bangalore", image: "luxury house img 01.jpg" },
+    { id: 6, title: "Sea Facing Penthouse", price: 60000000, location: "Chennai", image: " pent hus 09.jpg" },
+    { id: 7, title: "Golf Course Villa", price: 50000000, location: "Gurgaon", image: "golf villa img 01.jpg" },
   ];
 
   return (
     <div className="max-w-6xl mx-auto p-6">
-
-       <div className="w-full h-[91vh] relative">
-      <Swiper
-        modules={[Autoplay, Pagination]}
-        loop
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-        pagination={{ clickable: true }}
-        className="h-full"
-      >
-        {slides.map((src, index) => (
-          <SwiperSlide key={index} style={slideStyle}>
-            <img
-              src={src}
-              alt={Slide ${index + 1}}
-              className="w-full h-full object-fill"
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-
-      <style>{`
-         Pagination dots color 
-        .swiper-pagination-bullet {
-          background-color: rgb(68,202,250);
-          opacity: 1;
-        }
-        .swiper-pagination-bullet-active {
-          background-color: #29b6f6;
-        }
-      `}</style>
-    </div>
-  );
-};
 
       <h2 className="text-3xl font-bold mb-6 text-center">🆕 Latest Properties</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
